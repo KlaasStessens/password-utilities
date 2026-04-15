@@ -2,7 +2,7 @@ const { generateStrongPassword } = require("../index");
 
 test("generates a password of a given number of characters", () => {
     password = generateStrongPassword(1);
-    expect(password.() == 1 );
+    expect(password.length == 1 );
 });
 
 const { isStrongPassword } = require("../index");
