@@ -1,7 +1,7 @@
 {
   "name": "@nikleos/password-utilities",
   "version": "1.0.0",
-  "description": "",
+  "description": "A password utilities library",
   "main": "index.js",
   "scripts": {
     "test": "jest"
