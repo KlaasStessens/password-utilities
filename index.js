@@ -9,7 +9,17 @@ function generateStrongPassword(length = 12) {
  return strongPassword;
 }
 
+function isStrongPassword(password) {
+
+ if (password.length < 8) {
+    return false;
+ }
+
+ const isPasswordStrong = /[A-Z]/.test(password) && /[a-z]/.test(password) && /\d/.test(password) && /[!@#$%^&*()_+]/.test(password);
+ return isPasswordStrong;
+}
 
 module.exports = {
-    isStrongPassword,
+    generateStrongPassword,
+    isStrongPassword
 }
